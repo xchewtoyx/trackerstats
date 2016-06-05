@@ -1,0 +1,39 @@
+{
+  "name": "TrackerStats",
+  "version": "0.1",
+  "description": "Collect tracker stats and post to influxdb",
+  "background": {
+    "scripts": ["vendor/jquery.js", "post.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://alpharatio.cc/*"],
+      "js": ["vendor/jquery.js", "gather/ar.js"]
+    },
+    {
+      "matches": ["https://www.scenetime.com/*"],
+      "js": ["vendor/jquery.js", "gather/st.js"]
+    },
+    {
+      "matches": ["https://www.torrentleech.org/*"],
+      "js": ["vendor/jquery.js", "gather/tl.js"]
+    },
+    {
+      "matches": ["https://www.myanonamouse.net/*"],
+      "js": ["vendor/jquery.js", "gather/mam.js"]
+    },
+    {
+      "matches": ["http://www.empornium.sx/*"],
+      "js": ["vendor/jquery.js", "gather/emp.js"]
+    }
+  ],
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "manifest_version": 2
+}
