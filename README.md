@@ -8,8 +8,10 @@ Collects various stats, such as ratio, UL, DL and credits.
 Supported sites
 ---------------
 
-* alpharatio.cc
-* scenetime.com
-* torrentleech.org
-* empornium.sx
-* myanonamouse.net
+* 32p
+* alpharatio
+* scenetime
+* torrentleech
+* empornium
+* myanonamouse
+* tvchaosuk

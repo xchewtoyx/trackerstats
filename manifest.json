@@ -7,6 +7,10 @@
   },
   "content_scripts": [
     {
+        "matches": ["https://32pag.es/*"],
+        "js": ["vendor/jquery.js", "gather/32p.js"]
+    },
+    {
         "matches": ["https://alpharatio.cc/*"],
         "js": ["vendor/jquery.js", "gather/ar.js"]
     },
