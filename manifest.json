@@ -1,6 +1,6 @@
 {
   "name": "TrackerStats",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Collect tracker stats and post to influxdb",
   "background": {
     "scripts": ["vendor/jquery.js", "post.js"]

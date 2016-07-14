@@ -7,8 +7,8 @@
     console.log(readings);
     var stats = {
         'site': 'tvc',
-        'up': readings[3].split(': ')[1],
-        'down': readings[4].split(': ')[1],
+        'up': readings[2].split(': ')[1],
+        'down': readings[3].split(': ')[1],
         'credits': readings[1].split(': ')[1],
         'ratio': readings[0].split(': ')[1]
     };
